@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Pattern Analyzer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Text Pattern Analyzer</h1>
+    <p class="subtitle">Analyze patterns and characters in your text</p>
+
+    <textarea id="textInput"
+        placeholder="Enter a word or sentence..."></textarea>
+
+    <button onclick="analyzeText()">Analyze Text</button>
+
+    <div class="stats">
+
+        <div>
+            <h3 id="vowels">0</h3>
+            <p>Vowels</p>
+        </div>
+
+        <div>
+            <h3 id="consonants">0</h3>
+            <p>Consonants</p>
+        </div>
+
+        <div>
+            <h3 id="characters">0</h3>
+            <p>Characters</p>
+        </div>
+
+    </div>
+
+    <div class="result">
+        <h2>Palindrome Check</h2>
+        <p id="palindrome">Enter text to check.</p>
+    </div>
+
+    <div class="result">
+        <h2>Repeated Characters</h2>
+        <p id="repeated">No repeated characters.</p>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
